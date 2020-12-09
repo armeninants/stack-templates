@@ -3,6 +3,23 @@
 *.swp
 tarballs/
 .stack-work/
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
 
 {-# START_FILE ChangeLog.md #-}
 # Changelog for {{name}}
@@ -10,7 +27,7 @@ tarballs/
 ## Unreleased changes
 
 {-# START_FILE LICENSE #-}
-Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) 2019
+Copyright {{author-name}}{{^author-name}}Armen Inants{{/author-name}} (c) 2020
 
 All rights reserved.
 
@@ -94,11 +111,11 @@ main = do
 {-# START_FILE package.yaml #-}
 name:                {{name}}
 version:             0.1.0.0
-github:              {{github-username}}{{^github-username}}githubuser{{/github-username}}/{{name}}
+github:              {{github-username}}{{^github-username}}armeninants{{/github-username}}/{{name}}
 license:             BSD3
-author:              {{author-name}}{{^author-name}}Author name here{{/author-name}}
-maintainer:          {{author-email}}{{^author-email}}example@example.com{{/author-email}}
-copyright:           {{copyright}}{{^copyright}}{{year}}{{^year}}2020{{/year}} {{author-name}}{{^author-name}}Author name here{{/author-name}}{{/copyright}}
+author:              {{author-name}}{{^author-name}}Armen Inants{{/author-name}}
+maintainer:          {{author-email}}{{^author-email}}armen@inants.com{{/author-email}}
+copyright:           {{copyright}}{{^copyright}}{{year}}{{^year}}2020{{/year}} {{author-name}}{{^author-name}}Armen Inants{{/author-name}}{{/copyright}}
 
 extra-source-files:
 - README.md
@@ -111,7 +128,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on Github at <https://github.com/{{github-username}}{{^github-username}}githubuser{{/github-username}}/{{name}}#readme>
+description:         Please see the README on Github at <https://github.com/{{github-username}}{{^github-username}}armeninants{{/github-username}}/{{name}}#readme>
 
 dependencies:
 - base >= 4.11 && < 10
